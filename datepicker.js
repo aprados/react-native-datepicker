@@ -344,7 +344,8 @@ class DatePicker extends Component {
       cancelBtnAccessibilityLabel,
       confirmBtnAccessibilityLabel,
       allowFontScaling,
-      locale
+      locale,
+      accessible
     } = this.props;
 
     const dateInputStyle = [
@@ -361,6 +362,7 @@ class DatePicker extends Component {
         testID={testID}
         accessibilityLabel={accessibilityLabel}
         accessibilityRole={'button'}  
+        accessible={accessible}
       >
         <View accessible={false} style={[Style.dateTouchBody, customStyles.dateTouchBody]}>
           {
