@@ -410,6 +410,8 @@ class DatePicker extends Component {
                         timeZoneOffsetInMinutes={timeZoneOffsetInMinutes ? timeZoneOffsetInMinutes : null}
                         style={[Style.datePicker, customStyles.datePicker]}
                         locale={locale}
+                        accessibilityLabel={this.state.date.length > 0 this.state.date ? 'Open datepicker'}
+                        accessibilityRole={'button'} 
                       />
                     </View>
                     <TouchableComponent
