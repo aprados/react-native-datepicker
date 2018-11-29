@@ -354,15 +354,18 @@ class DatePicker extends Component {
       disabled && customStyles.disabled
     ];
 
+   /*         accessibilityLabel={accessibilityLabel}
+        accessibilityRole={'button'}  
+        accessible={accessible}*/
+    
+    
     return (
       <TouchableComponent
         style={[Style.dateTouch, style]}
         underlayColor={'transparent'}
         onPress={this.onPressDate}
         testID={testID}
-        accessibilityLabel={accessibilityLabel}
-        accessibilityRole={'button'}  
-        accessible={accessible}
+
       >
         <View accessible={false} style={[Style.dateTouchBody, customStyles.dateTouchBody]}>
           {
